@@ -59,6 +59,7 @@ button:hover{
     color: #0c0c0c;
     top: -15px;
     padding: 0 70px;
+    height: 70px;
 }
 
 .header{
@@ -90,6 +91,18 @@ button:hover{
     text-shadow: -2px 1px 10px #614d4d
 }
 
+.info{
+    width: 61%;
+    height: 400px;
+    background-color: #fdfddb9e;
+    text-align: center;
+    border-radius: 7px;
+    top: 12%;
+    position: absolute;
+    font-size: 48px;
+    color: #1f1f1c;
+    text-shadow: -2px 1px 10px #614d4d
+}
 .menu-container{
     width: 97%;
     height: 494px;
@@ -130,11 +143,95 @@ button:hover{
 }
 
 .info-text{
-    font-size: 30px;
+    font-size: 2.5vw;
     margin: auto;
-    width: 600px;
     text-align: left;
     color: black;
     text-shadow: none;
+    margin-left: 23px;
     font-style: italic;
 }
+
+@media all and (max-width:800px){
+    
+    button{
+    margin-top: 25px;
+    padding: 0px;
+    border-style: none;
+    background-color: transparent;
+    margin-left: 0px;
+    margin-right: 15px;
+    font-size: 19px;
+    color: #524f4f;
+    transition: 0.2s;
+    }
+
+    .header{
+    z-index: 1;
+    padding: 0 70px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    background-color: beige;
+    box-shadow: 6px -10px 3px 20px beige;}
+
+    .info {
+        width: 61%;
+        height: 385px;
+        background-color: #fdfddb9e;
+        text-align: center;
+        border-radius: 7px;
+        top: 30%;
+        position: absolute;
+        font-size: 48px;
+        color: #1f1f1c;
+        text-shadow: -2px 1px 10px #614d4d;
+    }
+
+    .menu{
+        width: 61%;
+        height: 559px;
+        background-color: #fdfddb9e;
+        text-align: center;
+        border-radius: 7px;
+        top: 23%;
+        position: absolute;
+        font-size: 48px;
+        color: #1f1f1c;
+        text-shadow: -2px 1px 10px #614d4d;
+    }
+
+    .menu-options {
+        border-style: solid;
+        border-width: 6px;
+        width: 25vw;
+        border-radius: 25px;
+        height: 451px;
+        background-color: #774c3d;
+    }
+
+    .menu-header {
+        margin: 20px;
+        font-family: 'Barlow Condensed';
+        text-shadow: none;
+        font-size: 7vw;
+        color: beige;
+    }
+    .menu-content {
+        margin-left: 7px;
+        text-shadow: none;
+        margin-top: -20px;
+        text-align: left;
+        font-size: 2.5vw;
+        line-height: 51px;
+        font-style: italic;
+        color: beige;
+        font-weight: bold;
+    }
+
+    .info-text{
+        font-size: 3.5vw;
+        margin-left: 17px;
+    }
